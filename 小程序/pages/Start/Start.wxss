@@ -1,0 +1,4 @@
+/* pages/Start/Start.wxss */
+.hover2{
+  background-color: crimson;
+}

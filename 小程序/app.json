@@ -1,7 +1,7 @@
 {
   "pages":[
+    "pages/index5/index5",
     "pages/Start/Start",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
@@ -16,7 +16,7 @@
     "selectedColor":"#f23030",
     "list": [
       {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/index5/index5",
       "text": "test",
       "iconPath": "icons/1.png",
       "selectedIconPath": "icons/1.png"

@@ -1,0 +1,20 @@
+
+
+<view>
+<swiper autoplay indicator-dots indicator-color="blue" indicator-active-color="red" circular>
+<swiper-item><image mode ="widthFix" src="../../images/l1.jpg"></image></swiper-item>
+<swiper-item><image mode ="widthFix" src="../../images/l2.jpg"></image></swiper-item>
+<swiper-item><image mode ="widthFix" src="../../images/l3.jpg"></image></swiper-item>
+<swiper-item><image mode ="widthFix" src="../../images/l4.jpg"></image></swiper-item>
+</swiper>
+<view class="hello">你好</view>
+<view class="box"> box</view>
+<view hover-class="hover1">hhh</view>
+<text selectable>123</text>
+<text decode>我们&nbsp;不同</text>
+<!--有回头键  -->
+<navigator url="../Start/Start" hover-class="hover2" open-type="navigate">首页</navigator>
+<!-- 没回头键 -->
+<navigator url="../Start/Start" hover-class="hover2" open-type="redirect">首页</navigator>
+<video src="../../video/1.mp4" duration="" controls autoplay></video>
+</view>
