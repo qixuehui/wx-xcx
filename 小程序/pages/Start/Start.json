@@ -1,5 +1,8 @@
 {
   "navigationBarBackgroundColor":"#00b26a",
   "navigationBarTextStyle":"black",
-  "navigationBarTitleText":"首页"
+  "navigationBarTitleText":"首页",
+  "usingComponents": {
+    "MyHeader":"../../components/MyHeader/Myheader"
+  }
 }

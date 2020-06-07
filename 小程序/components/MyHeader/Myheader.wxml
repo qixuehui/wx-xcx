@@ -1,0 +1,6 @@
+<view class="my-header">
+{{cData}}
+<view>
+<slot></slot>
+</view>
+</view>
