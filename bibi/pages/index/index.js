@@ -4,23 +4,55 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navList:[]
+    // 被点击的首页导航的菜单的索引
+    currentIndexNav:0,
+    navList:[],
+    // 轮播图
+    SwiperList:[]
   },
+  // 点击导航按钮
+  activeNav(e){
+    this.setData({
+      currentIndexNav:e.target.dataset.index
+    })
+  },
+  // 获取导航数据的函数
   getNavList(){
+    let that=this;
     wx.request({
-      url: 'https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/navList',
+      url: 'http://mock-api.com/mnEe4VnJ.mock/navList',
       success(res){
-        console.log(res);
+        // console.log(res);
+        if(res.data.code==0){
+          that.setData({
+            navList:res.data.data.navList
+          })
+        }
       }
     })
-
+  },
+  // 获取轮播图导航的函数
+  SwiperLis(){
+    let that=this;
+    wx.request({
+      url: 'http://mock-api.com/mnEe4VnJ.mock/swiperList',
+      success(res){
+         console.log(res);
+          that.setData({
+            SwiperList:res.data.data.swiperList
+          })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    // 获取首页
+    this.getNavList();
+    //获取轮播图
+    this.SwiperLis();
   },
 
   /**

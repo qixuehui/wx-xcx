@@ -1,0 +1,6 @@
+.box{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 50rpx;
+  background-color: brown;
+}
