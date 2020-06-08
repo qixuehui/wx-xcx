@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "bibi",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color":"#000000",
+    "selectedColor":"#f23030",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "test",
+      "iconPath": "icons/1.png",
+      "selectedIconPath": "icons/1.png"
+    },
+    {
+    "pagePath": "pages/logs/logs",
+    "text": "日志",
+    "iconPath": "icons/2.png",
+    "selectedIconPath": "icons/2.png"
+  }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

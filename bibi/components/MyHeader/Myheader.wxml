@@ -1,0 +1,24 @@
+<view class="my-header">
+<!-- logo -->
+<navigator class="logo">
+<image  class="logo_img" style="width:140rpx;height:60rpx" src="../../icons/4.png">
+</image>
+</navigator>
+<!-- 搜索  -->
+<view class="search-icon">
+<image class="logo_img" style="width:50rpx;height:58rpx" src="../../icons/5.png">
+</image>
+</view>
+<!-- 用户 -->
+<view class="user-icon">
+<image class="logo_img" style="width:54rpx;height:60rpx" src="../../icons/3.png">
+</image>
+</view>
+<!-- 下载按钮 -->
+<view class="dom_app">
+下载 App
+</view>
+<view>
+<slot></slot>
+</view>
+</view>

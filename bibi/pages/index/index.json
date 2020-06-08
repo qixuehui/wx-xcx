@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "bilibili",
+  "usingComponents": {
+    "MyHeader":"../../components/MyHeader/Myheader"
+  }
+}
