@@ -1,0 +1,27 @@
+<view class="main">
+<!-- 公关头部 -->
+<MyHeader></MyHeader>
+<!-- 首页导航 -->
+<view class="nav_wrap">
+<!-- 自己滚动驱动的组件 -->
+<scroll-view class="nav" scroll-x>
+<view bindtap="activeNav" data-index="{{index}}"
+class="nav_item {{index===currentIndexNav?'active':''}}"
+wx:for="{{navList}}" wx:key="index">
+{{item.text}}
+</view>
+</scroll-view>
+</view>
+
+<!-- 轮播图 -->
+<view class="slides">
+<swiper autoplay indicator-dots circular>
+<swiper-item wx:for="{{SwiperList}}" wx:key="index">
+<navigator>
+<image mode="widthFix" src="{{item.imgSrc}}"></image>
+</navigator>
+</swiper-item>
+</swiper>
+</view>
+
+</view>
