@@ -44,7 +44,27 @@
 <view class="comment_wrap">
 <!-- 总评论 -->
 <view class="comment_title">
-{{commentData.commentTotalCount}}
+{{commentData.commentTotalCount}}评论
+</view>
+<!-- 每个小评论 -->
+<view class="comment_list">
+<view class="comment_item" wx:for="{{commentData.commentList}}" wx:key="index">
+<!-- 左 -->
+<view class="comment_user">
+<image src="{{item.userIconSrc}}" mode="widthFix"></image>
+</view>
+<!-- 右 -->
+<view class="comment_info">
+<view class="comment_detail">
+<text class="author">{{item.username}}</text>
+<text class="date">{{item.commentDate}}</text>
+</view>
+<view class="comment_content">
+{{item.commentInfo}}
+</view>
+</view>
+
+</view>
 </view>
 
 
