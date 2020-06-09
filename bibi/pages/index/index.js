@@ -8,7 +8,8 @@ Page({
     currentIndexNav:0,
     navList:[],
     // 轮播图
-    SwiperList:[]
+    SwiperList:[],
+    Videos:[]
   },
   // 点击导航按钮
   activeNav(e){
@@ -37,10 +38,24 @@ Page({
     wx.request({
       url: 'http://mock-api.com/mnEe4VnJ.mock/swiperList',
       success(res){
-         console.log(res);
+        //  console.log(res);
           that.setData({
             SwiperList:res.data.data.swiperList
           })
+      }
+    })
+  },
+  getVideos(){
+    let that=this;
+    wx.request({
+      url: 'http://mock-api.com/mnEe4VnJ.mock/videoList',
+      success(res){
+        //  console.log(res);
+        if(res.data.code==0){
+          that.setData({
+            Videos:res.data.data.videoList
+          })
+        }
       }
     })
   },
@@ -53,6 +68,8 @@ Page({
     this.getNavList();
     //获取轮播图
     this.SwiperLis();
+    //获取视频
+    this.getVideos();
   },
 
   /**
