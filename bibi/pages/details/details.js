@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // :
+    // 视频详情
     videoInfo: null,
+    // 推荐视频
     othersList: [],
+    // 评论
     commentData: []
   },
  
@@ -40,13 +42,13 @@ Page({
   },
    // 获取推荐视频
    getOthersList(videoid){
-    const _this = this;
+    let that = this;
     wx.request({
-      url: 'https://mockapi.eolinker.com/7b7NMB9c75d613bc39c8f16e4e03a3d4a8f951750079dc5/otherList?id='+videoid,
+      url: 'http://mock-api.com/mnEe4VnJ.mock/otherList?id='+videoid,
       success(res){
-        if(res.data.code === 200) {
-          this.setData({
-            othersList:res.data
+        if(res.data.code === 0) {
+          that.setData({
+            othersList:res.data.data.otherList
           });
         } else{
           console.log(res);
@@ -58,13 +60,13 @@ Page({
 
   // 获取评论数据
   getCommentList(videoid){
-    const _this = this;
+    let that = this;
     wx.request({
-      url: 'https://mockapi.eolinker.com/7b7NMB9c75d613bc39c8f16e4e03a3d4a8f951750079dc5/commentLIst?id='+videoid,
-      success(res){i
-        if(res.data.code === 200) {
-          _this.setData({
-            commentData:res.data
+      url: 'http://mock-api.com/mnEe4VnJ.mock/commentList?id='+videoid,
+      success(res){
+        if(res.data.code === 0) {
+          that.setData({
+            commentData:res.data.data.commentData
           });
         } else {
           console.log(res);
