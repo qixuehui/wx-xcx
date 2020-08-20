@@ -3,8 +3,8 @@
 如果不可以直接去有关项目下查看img里面有其相关图片
 
 首页
-![login](https://github.com/qixuehui/Node_demo/blob/master/feedback/public/img/1.png)
+![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/1.png)
 视频详情
-![login](https://github.com/qixuehui/Node_demo/blob/master/feedback/public/img/1.png)
+![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/2.png)
 评论
-![login](https://github.com/qixuehui/Node_demo/blob/master/feedback/public/img/1.png)
+![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/3.png)
