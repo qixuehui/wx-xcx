@@ -1,6 +1,6 @@
 # -
 #### 不知道什么原因有时候可以显示图片，有时候不可以显示
-如果不可以直接去有关项目下查看img里面有其相关图片
+如果不可以直接下载项目查看img下的图片
 
 首页
 ![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/1.png)
