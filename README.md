@@ -4,12 +4,15 @@
 ##------------------------------------bibi--------------------------------------------##
 <br/>
 首页
+<br/>
 ![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/1.png)
 <br/>
 视频详情
+<br/>
 ![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/2.png)
 <br/>
 评论
+<br/>
 ![login](https://github.com/qixuehui/wx-xcx/blob/master/bibi/img/3.png)
 <br/>
 
